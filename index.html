@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive FD Rate Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>FD Rate Calculator</h1>
+    <div class="calculator">
+        <label for="principal">Principal Amount:</label>
+        <input type="number" id="principal" placeholder="Enter Principal Amount">
+        
+        <label for="bank">Bank:</label>
+        <select id="bank">
+            <option value="0">Bank A</option>
+            <option value="1">Bank B</option>
+            <option value="2">Bank C</option>
+            <!-- Add more options for additional banks -->
+        </select>
+        
+        <label for="time">Time (in years):</label>
+        <input type="number" id="time" placeholder="Enter Time in Years">
+        
+        <button onclick="calculate()">Calculate</button>
+        
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
